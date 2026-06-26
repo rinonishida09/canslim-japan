@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-26",
+  "market_trend": "中立",
+  "market_caution": false,
+  "buy": [
+    {
+      "code": "3769",
+      "name": "GMO Payment Gateway, Inc.",
+      "shares": "11",
+      "order_type": "指値",
+      "price": "8904",
+      "stop_loss": "8236",
+      "take_profit": "10907"
+    },
+    {
+      "code": "3696",
+      "name": "Ceres Inc.",
+      "shares": "49",
+      "order_type": "指値",
+      "price": "2039",
+      "stop_loss": "1886",
+      "take_profit": "2498"
+    },
+    {
+      "code": "4680",
+      "name": "Round One Corporation",
+      "shares": "87",
+      "order_type": "指値",
+      "price": "1138",
+      "stop_loss": "1053",
+      "take_profit": "1394"
+    },
+    {
+      "code": "6316",
+      "name": "Maruyama Mfg. Co., Inc.",
+      "shares": "39",
+      "order_type": "指値",
+      "price": "2558",
+      "stop_loss": "2366",
+      "take_profit": "3134"
+    },
+    {
+      "code": "9983",
+      "name": "Fast Retailing Co., Ltd.",
+      "shares": "1",
+      "order_type": "指値",
+      "price": "84070",
+      "stop_loss": "77765",
+      "take_profit": "102986"
+    }
+  ],
+  "sell": []
+}
