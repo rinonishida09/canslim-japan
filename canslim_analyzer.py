@@ -34,7 +34,7 @@ except ImportError:
 # ============================================================
 # 設定
 # ============================================================
-TOTAL_ASSETS = 200_000          # 総資産（円）
+TOTAL_ASSETS = 500_000          # 総資産（円）
 MAX_POSITION_RATIO = 0.20       # 1銘柄最大比率
 MAX_HOLDINGS = 5                # 最大保有銘柄数
 STOP_LOSS_PCT = 0.075           # 損切り（7.5%）
@@ -306,8 +306,9 @@ def analyze_stock(ticker: str) -> Optional[dict]:
         take_profit = round(buy_price * (1 + TAKE_PROFIT_PCT), 0)
 
         budget = TOTAL_ASSETS * MAX_POSITION_RATIO
-        shares = int(budget // buy_price // 100) * 100
-        if shares < 100:
+        # S株（1株単位）対応
+        shares = int(budget // buy_price)
+        if shares == 0:
             shares = 0
 
         try:
